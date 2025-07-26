@@ -1,26 +1,14 @@
-# Write a program to find greatest of four numbers entered by the user.
-# Get four numbers from the user
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-num3 = float(input("Enter third number: "))
-num4 = float(input("Enter fourth number: "))
+# write a program to find the greatest of four numbers entered by the user.
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+d=int(input("Enter fourth number:"))
 
-# Compare numbers using conditional statements
-if num1 >= num2 and num1 >= num3 and num1 >= num4:
-    greatest = num1
-elif num2 >= num1 and num2 >= num3 and num2 >= num4:
-    greatest = num2
-elif num3 >= num1 and num3 >= num2 and num3 >= num4:
-    greatest = num3
-else:
-    greatest = num4
-
-# Display the result
-print("The greatest number is:", greatest)
-
-#output
-#Enter first number: 12
-#Enter second number: 45
-#Enter third number: 33
-#Enter fourth number: 27
-#The greatest number is: 45.0
+if (a>b and a>c and a>d):
+    print("Greatest number is a:",a)
+if (b>a and b>c and b>d):
+    print("Greatest number is b:",b)
+if (c>a and c>b and c>d):
+    print("Greatest number is c:",c)
+if (d>a and d>b and d>c):
+    print("Greatest number is d",d)
