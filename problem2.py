@@ -1,17 +1,17 @@
-# Fun Mood Checker for Beginners
+# Take marks input from user for 3 subjects
+s1 = int(input("Enter marks for Subject 1: "))
+s2 = int(input("Enter marks for Subject 2: "))
+s3 = int(input("Enter marks for Subject 3: "))
 
-print("Welcome to the Mood Checker!")
-mood = input("How are you feeling today? (happy/sad/angry/lazy) 🤔: ").lower()
+# Calculate total and average
+total = s1 + s2 + s3
+average = total / 3
 
-if mood == "happy":
-    print("😊 That's awesome! Spread those good vibes!")
-elif mood == "sad":
-    print("😢 It's okay to feel sad. Better days are coming.")
-elif mood == "angry":
-    print("😠 Take a deep breath... and maybe punch a pillow 😄")
-elif mood == "lazy":
-    print("😴 Lazy days are necessary. Recharge yourself!")
+# Check pass/fail conditions
+if s1 >= 33 and s2 >= 33 and s3 >= 33:
+    if average >= 40:
+        print("Student has passed.")
+    else:
+        print("Student has failed due to less than 40% overall.")
 else:
-    print("🤷 Hmm, I can't read that mood... but I hope it's a good one!")
-
-print("Thanks for sharing your mood! 💖")
+    print("Student has failed due to less than 33% in one or more subjects.")
