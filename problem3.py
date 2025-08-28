@@ -1,17 +1,22 @@
-import random
+# A longer but simple Python conditional program
 
-# Computer picks a number between 1 and 10
-secret_number = random.randint(1, 10)
+marks = int(input("Enter your marks: "))
 
-print("I'm thinking of a number between 1 and 10...")
-
-while True:
-    guess = int(input("Enter your guess: "))
-    
-    if guess < secret_number:
-        print("Too low! Try again.")
-    elif guess > secret_number:
-        print("Too high! Try again.")
-    else:
-        print("You got it! 🎉")
-        break
+if marks >= 90:
+    print("Grade: A+")
+    print("Excellent performance!")
+elif marks >= 75:
+    print("Grade: A")
+    print("Very Good! Keep it up.")
+elif marks >= 60:
+    print("Grade: B")
+    print("Good work, but you can improve.")
+elif marks >= 45:
+    print("Grade: C")
+    print("You passed, but study harder.")
+elif marks >= 30:
+    print("Grade: D")
+    print("You barely passed. Try again with more focus.")
+else:
+    print("Grade: F")
+    print("You failed. Don’t give up, study and try again!")
