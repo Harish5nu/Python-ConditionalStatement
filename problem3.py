@@ -1,4 +1,4 @@
-# A longer but simple Python conditional program
+# A longer but simple Python conditional Program
 
 marks = int(input("Enter your marks: "))
 
